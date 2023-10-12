@@ -1,0 +1,89 @@
+html {
+    --show-border: 1px solid black;
+    --dark: #3f403f;
+    --theme: #9fb8ad;
+    --canvas: #e6e8e6;
+    --accent: #ced0ce;
+    --bold: #475841;
+    --font: Futura, Trebuchet MS, Arial, sans-serif; 
+}
+
+/* Main banner and nav bar */
+body {
+    background-color: var(--canvas);
+}
+
+.hero {
+    /* border: var(--show-border); */
+    height: 20em;
+    background-color: var(--theme);
+}
+
+.hero h1 {
+    text-align: center;
+    margin: 3em;
+    color: var(--dark);
+    font-family: var(--font);
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar li {
+    padding: 1em;
+    color: var(--dark);
+    font-family: var(--font);
+}
+
+
+/* Slideshow */
+
+.slideshow img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+
+/* Announcements */
+/* Create two unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 1000px;
+    font-family: var(--font);
+    color: var(--dark);
+}
+
+
+.left {
+    width: 70%;
+    margin: 3em;
+}
+
+
+.right {
+    border: var(--show-border);
+    width: 20%;
+    margin: 1em;
+    height: 800px;
+}
+.right h2 {
+    text-align: center;
+}
+.right p {
+    margin-left: 1em;
+}
+
+
+/* Clear floats after the columns */
+.content:after {
+    content: "";
+    display: table;
+    clear: both;
+
+
+}
